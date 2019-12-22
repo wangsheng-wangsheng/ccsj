@@ -1,0 +1,35 @@
+#title{
+  border: solid 2px red;
+  width: 1500px;
+  height: 120px;
+}
+#body{
+  width: 1500px;
+  height: 600px;
+
+}
+#left_body{
+  border: solid 2px red;
+  width: 300px;
+  height: 600px;
+  float: left;
+}
+#right_body{
+  border: solid 2px red;
+  width: 1193.5px;
+  height: 600px;
+  float: left;
+}
+#left_body a{
+  margin-top: 20px;
+  margin-left: 100px;
+  display: block;
+  width: 120px;
+  height: 30px;
+  background-color: #1592ef;
+  cursor:pointer;
+  text-align: center;
+}
+#left_body a:hover{
+  color: red;
+}
