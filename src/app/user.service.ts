@@ -16,7 +16,7 @@ export class UserService {
   getMenu(): Observable<Menu[]> {
     return this.http.get<Menu[]>(this.menuUrl).pipe();
   }
-  login(user: { username: string, password: string }): Observable<any> {
-    return this.http.post<any>(this.loginUrl, user);
+  login(userLogin: { username: string, password: string }): Observable<any> {
+    return this.http.post<any>(this.loginUrl, userLogin);
   }
 }

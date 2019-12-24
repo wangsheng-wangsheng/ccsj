@@ -2,6 +2,8 @@
   border: solid 2px red;
   width: 1500px;
   height: 120px;
+  background-color: bisque;
+
 }
 #body{
   width: 1500px;
@@ -13,6 +15,7 @@
   width: 300px;
   height: 600px;
   float: left;
+  background-color: #eeeeff;
 }
 #right_body{
   border: solid 2px red;
@@ -21,15 +24,68 @@
   float: left;
 }
 #left_body a{
-  margin-top: 20px;
-  margin-left: 100px;
   display: block;
-  width: 120px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 100px;
+  width: 100px;
   height: 30px;
   background-color: #1592ef;
   cursor:pointer;
   text-align: center;
+  text-decoration:none;
 }
 #left_body a:hover{
   color: red;
 }
+#user{
+  position: absolute;
+  right: 0px;
+  top: 75px;
+  width: 400px;
+  height: 100px;
+  text-align: center;
+
+}
+#user span{
+  color: chocolate;
+  font-family: "宋体";
+}
+#userTitle{
+  margin-top: 30px;
+  text-align: center;
+}
+#userTitle span{
+  font-size: 20px;
+  letter-spacing: 20px;
+}
+#firstMenu{
+  text-align: center;
+  width: 300px;
+  height: 40px;
+  background-color: #DDDDDD;
+  border-bottom: solid 4px slategrey;
+  font-size: 20px;
+  letter-spacing: 5px;
+}
+#secondMenu{
+  border-radius:5px
+}
+#show{
+  cursor:pointer;
+  text-align: center;
+  width: 300px;
+  height: 40px;
+}
+#controller{
+    cursor:pointer;
+    text-align: center;
+    width: 300px;
+    height: 30px;
+    background-color: #607D8B;
+    font-size: 20px;
+    letter-spacing: 5px;
+    color: #FFFFFF;
+
+}
+

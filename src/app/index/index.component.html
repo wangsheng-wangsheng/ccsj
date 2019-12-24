@@ -1,7 +1,14 @@
-<div id="title"></div>
+<div id="title">
+  <div id="userTitle"><span>人事管理系统</span><br><br>Personnel management system</div>
+  <div id="user"><h2>用户：{{name}}&nbsp;&nbsp;<span>欢迎登录！</span></h2></div>
+</div>
 <div id="body">
   <div id="left_body">
-    <a *ngFor="let menu of menus">{{menu.description}}</a>
+    <div (click)="show === 1 ? show =- 1 : show = 1;exchange()" id="controller">{{controller}}</div>
+    <div *ngFor="let menusRole of dynamicMenus" >
+      <div id="firstMenu" >{{menusRole.menusRole.role.description}}</div>
+      <div *ngIf="show === 1"><a routerLink="{{menu.url}}" *ngFor="let menu of menusRole.menusRole.menus" id="secondMenu">{{menu.description}}</a></div>
+    </div>
   </div>
-  <div id="right_body"></div>
+  <div id="right_body" ><router-outlet></router-outlet></div>
 </div>
